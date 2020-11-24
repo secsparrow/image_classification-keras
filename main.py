@@ -1,7 +1,6 @@
-# TensorFlow and tf.keras
+# import keras
 import tensorflow as tf
 from tensorflow import keras
-# Helper libraries
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -9,7 +8,7 @@ import matplotlib.pyplot as plt
 fashion_mnist = keras.datasets.fashion_mnist
 (train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
 
-#membuat class
+#membuat class untuk label
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
                'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 #eksplor data
@@ -24,7 +23,7 @@ train_labels
 #eksplor data test
 test_images.shape
 
-#train label test
+#ekspor label test
 len(test_labels)
 
 ##prepocessing data
